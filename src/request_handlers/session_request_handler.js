@@ -840,7 +840,7 @@ ghostdriver.SessionReqHand = function(session) {
 
     _getTitleCommand = function(req, res) {
         res.success(_session.getId(), _protoParent.getSessionCurrWindow.call(this, _session, req).title);
-    };
+    },
 
     _executePhantomJS = function(req, res) {
         var params = JSON.parse(req.post);
